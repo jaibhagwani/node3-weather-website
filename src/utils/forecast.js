@@ -11,7 +11,7 @@ const forecast =(lat, long, callback) =>{
             callback('Please provide valid location identifiers.')
         }
         else{
-            callback(undefined, "Is is currently " + body.current.temperature + " degress out. It feels like " + body.current.feelslike + " degrees out.");
+            callback(undefined, "Is is currently " + body.current.temperature + " degress out. It feels like " + body.current.feelslike + " degrees out. The humidity is " + body.current.humidity +  "%.");
         }
     })
 }
